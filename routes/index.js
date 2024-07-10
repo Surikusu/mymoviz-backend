@@ -23,7 +23,7 @@ router.get('/movies', (req,res) => {
             vote_count: movie.vote_count
         }));
 
-        res.json(filtered)
+        res.json({movies:filtered})
     })
 
     .catch(err => console.error(err))
