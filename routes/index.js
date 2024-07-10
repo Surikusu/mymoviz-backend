@@ -15,7 +15,7 @@ router.get('/movies', (req,res) => {
     .then(response => response.json())
     .then(data => {
 
-        const filtered = data.result.map(movie => ({
+        const filtered = data.results.map(movie => ({
             title: movie.title,
             overview: movie.overview,
             poster_path: movie.poster_path,
